@@ -306,7 +306,7 @@ toggleCardEdit();
         <div className="flex-box"  key={item.counter} id={item.counter} onDrop={drop} onDragOver={allowDrop} draggable="true" onDragStart={drag}>
                 <i className="fa fa-plus" id={item.counter} style={{float:'right',marginRight:15 +'px',marginTop:3+'px'}} onClick={toggleCard}></i>
                 <i className="fa fa-trash-o" id={item.counter} style={{float:'right',marginRight:15 +'px',marginTop:3+'px'}} onClick={()=>{deleteList(indexList)}}></i>
-                <i className="fa fa-edit" id={item.counter} style={{float:'right',marginRight:15+'px',marginTop:8+'px'}} onClick={()=>editLists(item,indexList)}></i>
+                <i className="fa fa-edit" id={item.counter} style={{float:'right',marginRight:15+'px',marginTop:5+'px'}} onClick={()=>editLists(item,indexList)}></i>
                 <span style={{float: 'left',fontSize: 20+'px',marginLeft: 7+'px',textOverflow: 'ellipsis',whiteSpace: 'nowrap',overflow: 'hidden',width: 225+'px'}}>{item.name}</span>
           {item.cards.map((card,index) => {
             return(
